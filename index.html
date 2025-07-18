@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootsrap/css/bootstrap.css">
+<link rel="stylesheet" href="./main.css">
+<meta name="viewport" content="width=device-width;initial-scale=1.0">
+<script src="./css/bootsrap/js/bootstrap.js"></script> <!----collapse kosam .js file used-->
+</head>
+<body>
+<section class="container-fluid">
+    <section class="row">
+        <section class="col-12 bg-danger px-0 px-lg-3">
+            <header class="container d-flex justify-content-between py-3">
+                <p class="logo m-0 bg-white text-danger fs-5 fw-bold">e!</p>
+                <div>
+                    <button class="btn text-white">Login</button>
+                    <button class="btn btn-outline-light">Create an account</button>
+                </div>
+            </header>
+        </section>
+    </section>
+    <section class="row bg-light"> <!---creates lite bg for 2nd section  (yidi peddha section) includes filers and img sections-->
+        <section class="col-lg-10 col-11 m-auto">
+        <h3 class="fw-bold text-color mt-2 d-lg-block d-none">Breakfast Places in Mumbai</h3>
+        <h5 class="fw-bold text-color mt-2 d-lg-none">Breakfast Places in Mumbai</h5>
+    <section class="row gap-lg-4">
+        <!----filters collapse---------------------------->
+        <section class="col-lg-3 col-12 p-2 bg-white shadow-lg mb-2 d-flex justify-content-between d-lg-none">  
+            <!---here border border-2  removed----->
+        <p class="m-0 fw-bold"> Filters/Sort</p>  
+        <button data-bs-toggle="collapse" data-bs-target="#collapseFilter">Hide/Show</button>
+  <!---ee line main to collapse filters  collapse antey akkada avi vunna kanapadadhu-->
+    </section>
+            <!---filers--------------->
+            <section class="col-lg-3 col-12 p-3 pt-2 bg-white shadow-lg collapse d-lg-block" id="collapseFilter">  <!---here border border-2  removed--
+                -----  <select class="m-0 fw-bold d-lg-none form-select p-1 d-flex">
+          <option value="" class="justify-content-center align-items-center">Filters/Sort</option>
+      </select>    yidi manam rasina code ------------------>
+            <p class="m-0 fw-bold"> Filters</p>
+            <div class="my-2 text-primary fw-bold">
+                <label for="" class="form-label">Search Location</label>
+                <select name="" id="" class="form-select text-muted">
+                    <option value="">Select Location</option>
+            </select>
+            </div>
+            <div class="my-2 text-primary mt-3">
+                <label for="" class="form-label fw-bold ">Cuisine</label>
+            </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label text-muted ">North Indian</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label text-muted ">South Indian</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label text-muted ">Chinese</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="" class="form-check-label text-muted ">Fast Food</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" checked>
+                    <label for="" class="form-check-label text-muted ">Street Food</label>
+                </div>
+                <div class="my-2 text-primary mt-3">
+                    <label for="" class="form-label fw-bold mb-0 ">Cost For Two</label>
+                </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="" class="form-check-label text-muted ">Less than 500</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="" class="form-check-label text-muted ">500 to 1000</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="" class="form-check-label text-muted ">1000 to 1500</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input">
+                        <label for="" class="form-check-label text-muted ">1500 to 2000</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" checked>
+                        <label for="" class="form-check-label text-muted ">2000+</label>
+                    </div>
+                    <div class="my-2 text-primary mt-3">
+                        <label for="" class="form-label fw-bold mb-0 ">Sort</label>
+                    </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input">
+                            <label for="" class="form-check-label text-muted ">Price low to high</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input">
+                            <label for="" class="form-check-label text-muted ">price high to low</label>
+                        </div>          
+                </section>
+        <!---imges--------------------->
+        <section class="col-12 col-lg-8 mt-lg-0 mt-3 px-0 px-lg-3"> <!---here border border-2  removed-->
+            <!---1st pic section---------------------------------------->
+            <section class=" bg-white shadow p-4 mb-4">  <!---border kosam section -->
+<!---shadow is a bootstrap property....it adds shadow-->
+                <section class="d-flex gap-4 align-items-center">
+                <!----5th section mana assnmnt page lo-->
+                <img src="./food-img.png" alt="" class="img">
+                <div>
+                    <p class="mb-2 h4 fw-bold text-color">The Big chill</p> <!--text-color is a class in .css file-->
+                    <p class="mb-1 fw-bold">FORT</p>
+                    <P class="text-muted mb-0">Shop 1,Plot D,Samruddhi Complex,Chincholi...</P>  <!---mb-0 ndhuku antey text center lo vundadhu 
+                                                                                                     after align-items also-->
+                </div>
+            </section>
+            <hr />    <!--creates horizontal line-->
+            <section class="row"> 
+                 <!--kothha section......so,bootstrap sequence-->
+                 <section class="col-lg-3 col-6">
+                    <p class="mb-1">CUISINES:</p>    <!----reduces space from bottom-->
+                    <p class="m-0">Cost For Two:</p>  <!----reduces space from bottom-->
+                  </section>
+                 <section class="col-3">
+                    <p class="mb-1">Bakery</p>      <!----reduces space from bottom-->
+                    <p class="m-0">₹700</p>         <!----reduces space from bottom-->
+                </section>
+            </section>
+        </section>
+        <!----2nd pic section-------------------------------------------->
+        <section class=" bg-white my-shadow p-4">  <!---border kosam section -->
+            <section class="d-flex gap-4 align-items-center">
+            <!----5th section mana assnmnt page lo-->
+            <img src="./food-img.png" alt="" class="img">
+            <div>
+                <p class="mb-2 h4 fw-bold text-color">The Big chill</p> <!--text-color is a class in .css file-->
+                <p class="mb-1 fw-bold">FORT</p>
+                <P class="text-muted mb-0">Shop 1,Plot D,Samruddhi Complex,Chincholi...</P>  <!---mb-0 ndhuku antey text center lo vundadhu 
+                                                                                                 after align-items also-->
+            </div>
+        </section>
+        <hr />    <!--creates horizontal line-->
+        <section class="row"> 
+             <!--kothha section......so,bootstrap sequence-->
+             <section class="col-3">
+                <p class="mb-1">CUISINES:</p>    <!----reduces space from bottom-->
+                <p class="m-0">Cost For Two:</p>  <!----reduces space from bottom-->
+              </section>
+             <section class="col-3">
+                <p class="mb-1">Bakery</p>      <!----reduces space from bottom-->
+                <p class="m-0">₹700</p>         <!----reduces space from bottom-->
+            </section>
+        </section>
+    </section>
+    <!----------------Pageignation------antey bottom lo numbrs vuntayi web page lo---------------->
+     <section class="d-flex justify-content-center">
+        <ul class="pagignation">
+            <li class="pagi active">&lt;</li>
+            <li class="pagi active">1</li>
+            <li class="pagi active">2</li>
+            <li class="pagi active">3</li>
+            <li class="pagi active">4</li>
+            <li class="pagi active">5</li>
+            <li class="pagi active">&gt;</li>
+        </ul>
+     </section>
+    </section>
+    </section>
+    </section>
+</section>
+</body>
+</html>

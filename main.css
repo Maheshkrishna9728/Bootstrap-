@@ -1,0 +1,37 @@
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+align-items:center;
+}
+.text-color{
+    color:#192F60 ;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25%;
+}
+.pagignation{
+    list-style: none;
+    display: flex;
+  margin: 10px;
+}
+.pagi{
+    width: 25px;
+    height: 25px;
+    border: 1px solid gray;
+   margin: 10px;
+  display: flex;  /*or text-align:center; use cheyochu*/
+  justify-content: center;
+  align-items: center;
+}
+.active{
+    background-color: grey;
+    color: white;
+}
+.my-shadow{
+    box-shadow: 10px 10px 10px grey;
+}

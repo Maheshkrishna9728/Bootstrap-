@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.parent{
+display: flex;
+flex-wrap: wrap;
+}
+.child{
+border: 1px solid black;
+width: 25%;
+height: 150px;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.bg-green{
+background-color: green;
+}
+.bg-red{
+background-color: red;
+}
+.bg-magenta{
+background: magenta;
+}
+.bg-brown{
+background-color: brown;
+}
+/*.....responsive in css for samsung....*/
+@media screen and (max-width: 900px) and (min-width: 650px) {
+  .child{
+   width: 100%;
+
+  } /*  body {
+        /*--background-color:red;*
+    }*/
+}
+/*.....responsive in css for tablet....*/
+@media screen and (max-width: 700px) and (min-width: 550px) {
+   /* body {
+      /* background-color:magenta;*
+   }*/
+   .child{
+    width: 50%;
+   }
+}
+/*.....responsive in css for laptop....*/
+@media screen and (max-width: 600px) and (min-width: 300px) {
+ .parent{
+    justify-content: space-between;
+ }
+
+    /*body {
+    /*background-color:orangered;*
+   }*/
+}
+/*.....responsive in css for mobile..*/
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    .bg-brown{
+        width: 100%;
+      }
+    /*.. body {
+
+       /*background-color:palegreen;*
+   }..*/
+}
